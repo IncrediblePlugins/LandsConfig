@@ -1,0 +1,3 @@
+[submodule "Language"]
+	path = Language
+	url = https://github.com/IncrediblePlugins/Translation.git
