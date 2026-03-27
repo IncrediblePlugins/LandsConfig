@@ -1,0 +1,12 @@
++ Added: Developer API: Land#modifyBalance(value, notify), Land#setBalance(value, notify)
+https://github.com/IncrediblePlugins/LandsAPI/commit/01d7ce9b4e9c30d6af1714b051df2d797c77dece
+
++ Added: Option to increase land_size limit for each trusted player
+  # Increases the land_size limit of the land for each trusted player.
+  # Please note that this only increases the max size. Depending on your player-limits.yml,
+  # this might not increase the actual amount of chunks that can be claimed,
+  # as this is modified by the player_chunks limit (from player-limits.yml) as well.
+  # This setting only influences the max theoretical size of the land.
+  increase-max-size-per-member: 0
+
++ Changed: Using bonemeal on crops and plants is now bound to the PLANT flag and not the HARVEST flag

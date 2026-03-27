@@ -1,0 +1,135 @@
+# Here you can disable the limits file to use permission based limits instead.
+# Disabling this is not recommended as some features won't work with permission based limits.
+# NOTE: This setting requires server reload / restart.
+enabled: true
+
+# In this file you can configure numbered limits for all players.
+# You can create multiple limit packs, if you want players to get different limits. Just add them in the "packs" section.
+#
+# A pack is assigned if the player has a specific permission.
+# A player can only have one pack. Every time a player joins, the pack gets evaluated.
+# They will get the first pack in the list that they have permission for.
+# So your order could be something like this: owner, admin, member etc.
+#
+# You can disable limits by setting the value to -1. However, in general, it's recommended to set limits to prevent abuse.
+# Limits that are not added to a pack, will automatically be set to 0 for the pack.
+#
+# Changes to this file can be applied to all players, lands and nations, using the "/lands admin limits refresh" command.
+packs:
+  # If enabled, all packs the player has, will be merged and the limits stacked.
+  # Basically the limit of each pack that the player has, will be added on top of each other.
+  # If you change this value, you may want to update already configured packs accordingly.
+  stack: false
+  # Pack for server admins that removes nearly all limits for them.
+  # You can remove this, if you don't want it.
+  admin:
+    # Required permission to get this pack assigned.
+    permission: "lands.admin.no_limits"
+    limits:
+      player_lands_owned: -1
+      player_lands_owned_free: 0
+      player_lands_trusted: -1
+      player_camps_owned: -1
+      player_chunks: -1
+      player_chunks_free: 0
+      player_rentals: -1
+      land_size: -1
+      land_members: -1
+      land_parts: -1
+      land_areas: -1
+      land_allies: -1
+      land_enemies: -1
+      area_roles: -1
+      nation_lands: -1
+
+  default:
+    limits:
+      # Amount of lands the player can own.
+      player_lands_owned: 1
+      # Amount of lands they can create free of charge (in case creation cost is configured).
+      player_lands_owned_free: 0
+      # Amount of lands a player can be trusted in (owned lands excluded).
+      player_lands_trusted: 1
+      # Amount of temporary camps they can have at the same time.
+      player_camps_owned: 1
+      # Amount of chunks a player can claim across all lands (owned & trusted).
+      # "land_size" is used to limit lands in their size.
+      player_chunks: -1
+      # Amount of chunks the player can claim free of charge combined for all lands they own
+      # and that they are trusted in (in case claim cost is configuted).
+      player_chunks_free: 0
+      # How many areas a player can rent across all lands.
+      player_rentals: 1
+      # How many chunks each land they own can claim max. This can be used to limit land sizes.
+      # "player_chunks" is used to control how many chunks each player can claim.
+      land_size: 100
+      # Amount of players they can trust to each land they own.
+      land_members: 20
+      # Amount of parts the lands they own can be split into. Allowing the creation of outposts.
+      # If set to 1, no splits allowed.
+      land_parts: 1
+      # Amount of sub areas they can create for each land they own.
+      land_areas: 20
+      # Amount of allies they can add for each land they own.
+      land_allies: 10
+      # Amount of enemies they can add for each land they own.
+      land_enemies: 20
+      # Amount of roles they can create for each area in their owned lands.
+      area_roles: 20
+      # Amount of lands they can add to the nation that they own.
+      nation_lands: 10
+
+# By setting up time rewards you can increase a players limit according to their time that they played on the server.
+# A player will receive additional limits each configured period. The playtime is calculated by the server.
+# If you delete the primary world, the playtime of players will likely reset. This is handled by the server itself.
+time-rewards:
+  player_lands_owned:
+    # Players receive one additional owned land each configured period.
+    # Time units are: s = seconds, m = minutes, h = hours, d = days
+    # 0s = disabled
+    time: 0s
+    # Set the maximum amount of owned lands that they can receive through their play time.
+    # -1 = no limit
+    max: -1
+  player_lands_owned_free:
+    time: 0s
+    max: -1
+  player_lands_trusted:
+    time: 0s
+    max: -1
+  player_camps_owned:
+    time: 0s
+    max: -1
+  player_chunks:
+    time: 0s
+    max: -1
+  player_chunks_free:
+    time: 0s
+    max: -1
+  player_rentals:
+    time: 0s
+    max: -1
+  land_size:
+    time: 0s
+    max: -1
+  land_members:
+    time: 0s
+    max: -1
+  land_parts:
+    time: 0s
+    max: -1
+  land_areas:
+    time: 0s
+    max: -1
+  land_allies:
+    time: 0s
+    max: -1
+  land_enemies:
+    time: 0s
+    max: -1
+  area_roles:
+    time: 0s
+    max: -1
+  nation_lands:
+    time: 0s
+    max: -1
