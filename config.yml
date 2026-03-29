@@ -160,6 +160,9 @@ general:
   upd-notify: false
   # Provide bedrock forms for bedrock players, instead of the normal GUI?
   bedrock-forms: true
+  # Specify a hologram plugin that should be used for holograms. The plugin needs to be installed. If empty, the plugin decides which to use.
+  # Supported plugins: CMI, DecentHolograms, FancyHolograms, HolographicDisplays
+  hologram-provider: ""
 
 # General options for economic tasks, that apply to taxes, upkeep and nation upkeep.
 # Each task has it's own section, in this file and nations.yml, with specified options.
@@ -1045,24 +1048,6 @@ database:
     # NOTE: If you're using multipaper, make sure to provide the actual name of the multipaper instance that should be the master server (not the multipaper master).
     # NOTE: This option can be overriden in server-name.yml to allow you copying this file (config.yml) to other servers without adjust this section.
     master: false
-
-  # Use SQLite for the database. Doesn't require a database server.
-  sqlite-v2: false
-
-  ##########################################################
-  # Deprecated SQL schema. Use mysql-v2 (above) instead. #
-  ##########################################################
-  mysql:
-    enabled_20: false
-    ip-address: 'localhost'
-    port: '3306'
-    username: 'minecraft'
-    password: 'password'
-    database: 'lands'
-
-    # It is highly recommended to set a unique table prefix if the plugin shares a database with other plugins or Lands instances.
-    table-prefix: 'lands_'
-
 
   # If Lands can't connect to your MySQL database, because for example the credentials are invalid or outdated.
   # Should Lands disallow players to join the server, if it couldn't connect to the database?

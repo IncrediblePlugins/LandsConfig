@@ -62,6 +62,7 @@ packs:
       player_rentals: 1
       # How many chunks each land they own can claim max. This can be used to limit land sizes.
       # "player_chunks" is used to control how many chunks each player can claim.
+      # You can increase the max size for each trusted player by editing the "increase-max-size-per-member" option in config.yml.
       land_size: 100
       # Amount of players they can trust to each land they own.
       land_members: 20
