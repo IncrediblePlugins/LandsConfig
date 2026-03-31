@@ -2,3 +2,5 @@
   # Specify a hologram plugin that should be used for holograms. The plugin needs to be installed. If empty, the plugin decides which to use.
   # Supported plugins: CMI, DecentHolograms, FancyHolograms, HolographicDisplays
   hologram-provider: ""
+
+//
