@@ -165,7 +165,7 @@ general:
   hologram-provider: ""
 
 # General options for economic tasks, that apply to taxes, upkeep and nation upkeep.
-# Each task has it's own section, in this file and nations.yml, with specified options.
+# Each task has its own section, in this file and nations.yml, with specified options.
 # These options require server reload / restart.
 economic:
   # Default configuration: taxes, upkeep and nation upkeep are collected every day at midnight.
@@ -333,13 +333,6 @@ land:
       # Should players be allowed to use PlaceholderAPI placeholders provided by 3rd party plugins and Lands?
       # This requires PlaceholderAPI to be installed.
       3rd-party: false
-
-  # Increases the land_size limit of the land for each trusted player.
-  # Please note that this only increases the max size. Depending on your player-limits.yml,
-  # this might not increase the actual amount of chunks that can be claimed,
-  # as this is modified by the player_chunks limit (from player-limits.yml) as well.
-  # This setting only influences the max theoretical size of the land.
-  increase-max-size-per-member: 0
 
   # Set the minimum Euclidean distance in chunks (16 blocks). Players won't be able to claim in this buffer zone,
   # unless their role has the LAND_CLAIM_BORDER flag in the neighboring land.
@@ -547,8 +540,9 @@ land:
     no-claims: 0
 
   # Should players keep their inventory, if they die inside a land?
-  # This option is forcefully enabled, if the player dies inside an area where they can't pickup items.
+  # This option is forcefully enabled, if the player dies inside an area where they can't pick up items.
   # For wars this can be configured in wars.yml.
+  # NOTE: If you use another plugin that modifies keep-inventory, keep this disabled.
   keep-inventory:
     enabled_11: false
     mode_4: false
@@ -1004,6 +998,10 @@ command:
 
 # Lands menu options (/lands menu)
 gui:
+  # Create an additional definitions file in which slots, item types etc. are configured.
+  # This is useful, if you maintain multiple locale files and want item slots, model data etc. to be the same across all locales.
+  # In that file you can configure everything that isn't locale specific.
+  definitions-file: false
   # Should Lands automatically adjust the length of item lore lines?
   # Recommended length is 35.
   # NOTE: Set this to 0 to disable it.

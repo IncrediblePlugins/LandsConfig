@@ -33,6 +33,7 @@ packs:
       player_chunks: -1
       player_chunks_free: 0
       player_rentals: -1
+      player_selection_size: -1
       land_size: -1
       land_members: -1
       land_parts: -1
@@ -62,7 +63,7 @@ packs:
       player_rentals: 1
       # How many chunks each land they own can claim max. This can be used to limit land sizes.
       # "player_chunks" is used to control how many chunks each player can claim.
-      # You can increase the max size for each trusted player by editing the "increase-max-size-per-member" option in config.yml.
+      # You can increase the max size for each trusted player by editing the "increase-land_size" option in this file.
       land_size: 100
       # Amount of players they can trust to each land they own.
       land_members: 20
@@ -79,6 +80,14 @@ packs:
       area_roles: 20
       # Amount of lands they can add to the nation that they own.
       nation_lands: 10
+
+
+# Increases the land_size limit of the land for each trusted player.
+# Please note that this only increases the max size. Depending on your configuration of the limit packs,
+# this might not increase the actual amount of chunks that can be claimed, as this is modified by the
+# player_chunks limit as well. This setting only influences the max theoretical size of the land, if
+# the player_chunks limit is set.
+increase-land_size: 5
 
 # By setting up time rewards you can increase a players limit according to their time that they played on the server.
 # A player will receive additional limits each configured period. The playtime is calculated by the server.
