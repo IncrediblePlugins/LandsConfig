@@ -50,7 +50,7 @@ nation:
   tag:
     # Enable tags?
     # NOTE: This setting required server reload / restart.
-    enabled_2: true
+    enabled_2: false
     # Minimum nation tag length
     min-length_2: 1
     # Maximum nation tag length

@@ -29,6 +29,7 @@ land:
     - ATTACK_PLAYER
     - ATTACK_ANIMAL
     - ATTACK_MONSTER
+    - WIND_BURST
     - LAND_ENTER
     - FLY
     - ELYTRA
@@ -95,6 +96,7 @@ land:
         - ATTACK_PLAYER
         - ATTACK_ANIMAL
         - ATTACK_MONSTER
+        - WIND_BURST
         - FLY
         - ELYTRA
         - LAND_ENTER
@@ -132,6 +134,7 @@ land:
         - ATTACK_PLAYER
         - ATTACK_ANIMAL
         - ATTACK_MONSTER
+        - WIND_BURST
         - FLY
         - ELYTRA
         - LAND_ENTER
@@ -169,6 +172,7 @@ land:
         - ATTACK_PLAYER
         - ATTACK_ANIMAL
         - ATTACK_MONSTER
+        - WIND_BURST
         - FLY
         - ELYTRA
         - LAND_ENTER
@@ -194,6 +198,7 @@ land:
         - ATTACK_PLAYER
         - ATTACK_ANIMAL
         - ATTACK_MONSTER
+        - WIND_BURST
         - FLY
         - ELYTRA
         - SPAWN_TELEPORT
@@ -215,6 +220,7 @@ land:
         - ATTACK_PLAYER
         - ATTACK_ANIMAL
         - ATTACK_MONSTER
+        - WIND_BURST
         - FLY
         - SPAWN_TELEPORT
         - ENDER_PEARL
@@ -238,6 +244,7 @@ land:
         - ATTACK_PLAYER
         - ATTACK_ANIMAL
         - ATTACK_MONSTER
+        - WIND_BURST
         - FLY
         - SPAWN_TELEPORT
         - ENDER_PEARL

@@ -302,7 +302,7 @@ land:
   tag:
     # Enable tags?
     # NOTE: This setting required server reload / restart.
-    enabled_8: true
+    enabled_8: false
     # Minimum land tag length
     min-length_2: 1
     # Maximum land tag length

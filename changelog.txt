@@ -1,6 +1,2 @@
-+ Added: Option to specify hologram provider:
-  # Specify a hologram plugin that should be used for holograms. The plugin needs to be installed. If empty, the plugin decides which to use.
-  # Supported plugins: CMI, DecentHolograms, FancyHolograms, HolographicDisplays
-  hologram-provider: ""
-
-//
++ Added: [API] LandsIntegration#getMemberHolderByTag(String)
+- Fixed: Folia only - error at loading parts of the claimed chunks, if it contained a land block
