@@ -1,2 +1,4 @@
-+ Added: [API] LandsIntegration#getMemberHolderByTag(String)
-- Fixed: Folia only - error at loading parts of the claimed chunks, if it contained a land block
+- Fix: Configuration of max amount of playtime limit
+- Fix: Visualization when creating camp
+- Change: Placement of mainblock and campblock improved
+- Change: Improve selection item removal while in creative mode

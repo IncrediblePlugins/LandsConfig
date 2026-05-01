@@ -515,13 +515,7 @@ land:
     # '30d:never' means that the land will never be deleted or the owner changed.
     # Inactive land owners get, depending on your configuration, either untrusted and a new owner is set or their land get's deleted.
     # An empty list disables this option.
-    owner_list:
-      - '15m:7d'
-      - '30m:14d'
-      - '12h:30d'
-      - '1d:60d'
-      - '15d:80d'
-      - '30d:never'
+    owner_list: [ ]
 
     # How long does a land member need to be offline, to be considered inactive?
     # Inactive land members get untrusted.
