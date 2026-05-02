@@ -1,4 +1,3 @@
-- Fix: Configuration of max amount of playtime limit
-- Fix: Visualization when creating camp
-- Change: Placement of mainblock and campblock improved
-- Change: Improve selection item removal while in creative mode
+- Fix: not being able to transfer ownership to another player despite them having enough limit
+- Fix: when a player left the land, their chunks were unclaim despite owner having enough limit to take the ownership
+- Fix: projectile actions being denied in recent versions because of redstone mechanism change
